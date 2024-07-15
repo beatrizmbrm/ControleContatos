@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/Editar.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ControleContatos.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    @model ContatoModel
+    @{
+        ViewData["Title"] = "Edite o contato";
+    }
+    <div class="text-center">
+
+        <h1 class="display-4">
+
+            Edite o contato
+
+        </h1>
+
+        <form action="/Contato/Editar" method="post">
+
+            <input type="hidden" action="Id" />
+            <div class="conteudo">
+                <div class="form_contato">
+                    <input type="text" name="Nome" class="nome" placeholder="Nome" required>
+                </div>
+
+                <div class="form_contato">
+                    <input type="tel" name="Telefone" class="telefone" placeholder="Telefone" required>
+                </div>
+
+                <div class="form_contato">
+                    <input type="email" name="Email" class="email" placeholder="E-mail" required>
+                </div>
+
+                <button type="submit" role="button">Editar</button>
+                <a class="btn_voltar" href="/Contato/Index">Voltar</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

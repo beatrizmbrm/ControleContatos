@@ -1,0 +1,28 @@
+﻿body {
+}
+button{
+    align-content:center;
+}
+.cancelar_exclusao {
+    width: 50%;
+    padding: 10px 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin: 3px 40px 3px 10px;
+    background-color: #891212;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.confirmar_exclusao {
+    width: 50%;
+    padding: 10px 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin: 3px 10px 3px 10px;
+    background-color: #267848;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
